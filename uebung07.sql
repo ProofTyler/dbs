@@ -27,3 +27,12 @@ from fb left join doz using(fbkurz)
 where doz.fbkurz is null;
 
 -- DOZ07
+select fbname, name 
+from fb right join doz using(fbkurz)
+union
+select fbname, name 
+from fb left join doz using(fbkurz);
+
+-- DOZ08
+
+
